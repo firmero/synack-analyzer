@@ -1,0 +1,19 @@
+[package]
+name = "synack-analyzer"
+version = "0.2.2-unreleased"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.2.1", features = ["derive", "env"] }
+# https://docs.rs/pcap/1.0.0/pcap/
+pcap = { version = "1.0.0", features = ["capture-stream"] }
+# https://docs.rs/etherparse/0.13.0/etherparse/
+etherparse = "0.13.0"
+log = "0.4.17"
+env_logger = "0.10.0"
+chrono = "0.4.24"
+lazy_static = "1.4.0"
+prometheus = { version = "0.13.3", features = ["process"] }
+tokio = { version = "1.27.0", features = ["macros"] }
+warp = "0.3.4"
+gethostname = "0.4.2"
